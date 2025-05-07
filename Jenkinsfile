@@ -12,19 +12,19 @@ pipeline {
     stages {
         stage('Clonar Repositorio') {
             steps {
-                git 'https://github.com/FerFisX/Frontend-Jenkins.git'
+                git branch: 'main', url: 'https://github.com/FerFisX/Frontend-Jenkins.git'
             }
         }
 
         stage('Instalar dependencias') {
             steps {
-                sh 'npm install'
+                bat 'npm install'
             }
         }
 
         stage('Compilar o iniciar el proyecto') {
             steps {
-                sh 'npm run build || npm run dev'
+                bat 'npm run build || npm run dev'
             }
         }
     }
