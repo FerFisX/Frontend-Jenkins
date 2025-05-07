@@ -3,26 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora Bolivia con tours auténticos y paisajes únicos. TuDestinoBolivia te lleva al Salar de Uyuni, Lago Titicaca y más.">
     <title>TuDestinoBolivia - Explora la Belleza de La Paz</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="">
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYM8mR4FHAkjSBYJHvUtxjDidfr2y1jPPxXVcKM5qlW0pjKsfjHOxXpy9MCLMYoNLQTupRO6xj/hcFEufg==" crossorigin=""></script>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="logo-bolivia.png" alt="Logo TuDestinoBolivia">
-            <h1>TuDestinoBolivia</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#destacados">Tours Destacados</a></li>
-                <li><a href="#nosotros">Sobre Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+
+<header>
+    <div class="logo">
+        <img src="logo-bolivia.png" alt="Logo de TuDestinoBolivia">
+        <h1>TuDestinoBolivia</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#destacados">Tours Destacados</a></li>
+            <li><a href="#nosotros">Sobre Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
 
     <section class="hero">
         <div class="hero-content">
@@ -35,25 +39,25 @@
     <section id="destacados" class="destacados">
         <h2>Nuestros Tours Destacados</h2>
         <div class="tour-grid">
-            <div class="tour-card" data-destino="Salar de Uyuni" data-descripcion="Una maravilla natural única en el mundo. Explora la inmensidad blanca del Salar de Uyuni y sus lagunas de colores.">
+            <article class="tour-card" data-destino="Salar de Uyuni" data-descripcion="Una maravilla natural única en el mundo. Explora la inmensidad blanca del Salar de Uyuni y sus lagunas de colores.">
                 <img src="salar-uyuni.jpg" alt="Salar de Uyuni">
                 <h3>Salar de Uyuni</h3>
                 <p class="descripcion-corta">Explora la inmensidad blanca...</p>
                 <button class="ver-mas">Ver más</button>
-            </div>
-            <div class="tour-card" data-destino="Lago Titicaca" data-descripcion="El lago navegable más alto del mundo. Visita las islas flotantes de los Uros y la Isla del Sol.">
+            </article>
+            <article class="tour-card" data-destino="Lago Titicaca" data-descripcion="El lago navegable más alto del mundo. Visita las islas flotantes de los Uros y la Isla del Sol.">
                 <img src="lago-titicaca.jpg" alt="Lago Titicaca">
                 <h3>Lago Titicaca</h3>
                 <p class="descripcion-corta">El lago navegable más alto...</p>
                 <button class="ver-mas">Ver más</button>
-            </div>
-            <div class="tour-card" data-destino="Amazonía Boliviana" data-descripcion="Sumérgete en la selva tropical más grande del planeta. Descubre la biodiversidad y las culturas ancestrales de la Amazonía boliviana.">
+            </article>
+            <article class="tour-card" data-destino="Amazonía Boliviana" data-descripcion="Sumérgete en la selva tropical más grande del planeta. Descubre la biodiversidad y las culturas ancestrales de la Amazonía boliviana.">
                 <img src="amazonia.jpg" alt="Amazonía Boliviana">
                 <h3>Amazonía Boliviana</h3>
                 <p class="descripcion-corta">Sumérgete en la selva tropical...</p>
                 <button class="ver-mas">Ver más</button>
-            </div>
-            </div>
+            </article>
+        </div>
     </section>
 
     <section id="nosotros" class="nosotros">
@@ -66,25 +70,33 @@
         <h2>Contáctanos</h2>
         <p>¿Tienes alguna pregunta o deseas reservar un tour? ¡No dudes en contactarnos!</p>
         <form>
-            <input type="text" placeholder="Nombre">
-            <input type="email" placeholder="Correo Electrónico">
-            <textarea placeholder="Mensaje"></textarea>
+            <label for="nombre" class="sr-only">Nombre</label>
+            <input type="text" id="nombre" placeholder="Nombre" required>
+
+            <label for="correo" class="sr-only">Correo Electrónico</label>
+            <input type="email" id="correo" placeholder="Correo Electrónico" required>
+
+            <label for="mensaje" class="sr-only">Mensaje</label>
+            <textarea id="mensaje" placeholder="Mensaje" required></textarea>
+
             <button type="submit" class="button">Enviar Mensaje</button>
         </form>
     </section>
 
-    <footer>
-        <p>&copy; 2025 TuDestinoBolivia. Todos los derechos reservados.</p>
-    </footer>
+</main>
 
-    <div id="modal-tour" class="modal">
-        <div class="modal-content">
-            <span class="cerrar-modal">&times;</span>
-            <h3 id="modal-titulo"></h3>
-            <p id="modal-descripcion"></p>
-            </div>
+<footer>
+    <p>&copy; <time datetime="2025">2025</time> TuDestinoBolivia. Todos los derechos reservados.</p>
+</footer>
+
+<div id="modal-tour" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-titulo" aria-describedby="modal-descripcion">
+    <div class="modal-content">
+        <button class="cerrar-modal" aria-label="Cerrar modal">&times;</button>
+        <h3 id="modal-titulo"></h3>
+        <p id="modal-descripcion"></p>
     </div>
+</div>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
