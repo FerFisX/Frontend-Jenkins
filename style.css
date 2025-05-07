@@ -5,7 +5,6 @@ body {
     background-color: #121212;
     color: #E5E7EB;
 }
-
 header {
     background-color: #1E1E1E;
     color: #E5E7EB;
@@ -15,57 +14,47 @@ header {
     align-items: center;
     box-shadow: 0 2px 8px #2A2A2A;
 }
-
 .logo {
     display: flex;
     align-items: center;
 }
-
 .logo img {
     height: 50px;
     margin-right: 10px;
 }
-
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
 }
-
 nav ul li {
     margin-left: 1.5em;
 }
-
 nav ul li a {
     text-decoration: none;
     color: #E5E7EB;
     font-weight: bold;
     transition: color 0.3s ease;
 }
-
 nav ul li a:hover {
     color: #9333EA;
 }
-
 .hero {
     background: linear-gradient(rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0.7)), url('hero-bolivia.jpg') center/cover no-repeat;
     color: #E5E7EB;
     text-align: center;
     padding: 5em 0;
 }
-
 .hero-content {
     max-width: 800px;
     margin: 0 auto;
 }
-
 .hero h2 {
     font-size: 3em;
     margin-bottom: 0.5em;
     color: #7C3AED;
 }
-
 .hero p {
     font-size: 1.2em;
     margin-bottom: 1.5em;
