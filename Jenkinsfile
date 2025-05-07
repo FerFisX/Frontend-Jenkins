@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     triggers {
-        cron('H/10 * * * *')  // Ejecuta cada 10 minutos
+        cron('H/5 * * * *')  // Ejecuta cada 5 minutos
     }
 
     environment {
