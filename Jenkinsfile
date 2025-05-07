@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     triggers {
-        cron('H/10 * * * *')  // Cada 10 minutos
+        cron('H/10 * * * *')  // Ejecuta cada 10 minutos
     }
 
     environment {
@@ -18,23 +18,27 @@ pipeline {
 
         stage('Instalar dependencias') {
             steps {
-                bat 'npm install'
+                bat '''
+                    if exist node_modules rmdir /s /q node_modules
+                    if exist package-lock.json del package-lock.json
+                    npm install
+                '''
             }
         }
 
-        stage('Compilar o iniciar el proyecto') {
+        stage('Iniciar servidor en segundo plano') {
             steps {
-                bat 'npm run build || npm run dev'
+                bat 'start /B npm run dev'
             }
         }
     }
 
     post {
         failure {
-            echo 'El pipeline falló 😢'
+            echo '❌ El pipeline falló.'
         }
         success {
-            echo 'Pipeline ejecutado correctamente ✅'
+            echo '✅ El pipeline se ejecutó correctamente.'
         }
     }
 }
