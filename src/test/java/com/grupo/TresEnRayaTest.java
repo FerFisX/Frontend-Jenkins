@@ -26,6 +26,8 @@ public class TresEnRayaTest {
         assertThrows(IllegalStateException.class, () -> juego.colocarFicha(0, 0));
     }
 
+    // Prueba para asegurar que los turnos cambien entre X y O
+
     @Test
     public void testTurnosAlternos() {
         TresEnRaya juego = new TresEnRaya();
