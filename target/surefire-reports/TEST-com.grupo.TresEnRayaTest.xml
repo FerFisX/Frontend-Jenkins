@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.grupo.TresEnRayaTest" time="0.073" tests="5" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Rodrigo Edgar Tarifa\OneDrive\Escritorio\tres-en-raya-tdd\target\test-classes;C:\Users\Rodrigo Edgar Tarifa\OneDrive\Escritorio\tres-en-raya-tdd\target\classes;C:\Users\Rodrigo Edgar Tarifa\.m2\repository\org\junit\jupiter\junit-jupiter\5.11.0\junit-jupiter-5.11.0.jar;C:\Users\Rodrigo Edgar Tarifa\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.0\junit-jupiter-api-5.11.0.jar;C:\Users\Rodrigo Edgar Tarifa\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Rodrigo Edgar Tarifa\.m2\repository\org\junit\platform\junit-platform-commons\1.11.0\junit-platform-commons-1.11.0.jar;C:\Users\Rodrigo Edgar Tarifa\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Rodrigo Edgar Tarifa\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.0\junit-jupiter-params-5.11.0.jar;C:\Users\Rodrigo Edgar Tarifa\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.11.0\junit-jupiter-engine-5.11.0.jar;C:\Users\Rodrigo Edgar Tarifa\.m2\repository\org\junit\platform\junit-platform-engine\1.11.0\junit-platform-engine-1.11.0.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/La_Paz"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="ES"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.8.7-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\Rodrigo Edgar Tarifa\AppData\Local\Temp\surefire18354808264982061754\surefirebooter-20250519165417517_3.jar C:\Users\Rodrigo Edgar Tarifa\AppData\Local\Temp\surefire18354808264982061754 2025-05-19T16-54-17_328-jvmRun1 surefire-20250519165417517_1tmp surefire_0-20250519165417517_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Rodrigo Edgar Tarifa\OneDrive\Escritorio\tres-en-raya-tdd\target\test-classes;C:\Users\Rodrigo Edgar Tarifa\OneDrive\Escritorio\tres-en-raya-tdd\target\classes;C:\Users\Rodrigo Edgar Tarifa\.m2\repository\org\junit\jupiter\junit-jupiter\5.11.0\junit-jupiter-5.11.0.jar;C:\Users\Rodrigo Edgar Tarifa\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.0\junit-jupiter-api-5.11.0.jar;C:\Users\Rodrigo Edgar Tarifa\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Rodrigo Edgar Tarifa\.m2\repository\org\junit\platform\junit-platform-commons\1.11.0\junit-platform-commons-1.11.0.jar;C:\Users\Rodrigo Edgar Tarifa\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Rodrigo Edgar Tarifa\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.0\junit-jupiter-params-5.11.0.jar;C:\Users\Rodrigo Edgar Tarifa\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.11.0\junit-jupiter-engine-5.11.0.jar;C:\Users\Rodrigo Edgar Tarifa\.m2\repository\org\junit\platform\junit-platform-engine\1.11.0\junit-platform-engine-1.11.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Rodrigo Edgar Tarifa"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-07-18"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.8.7-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Rodrigo Edgar Tarifa\OneDrive\Escritorio\tres-en-raya-tdd"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Rodrigo Edgar Tarifa\AppData\Local\Temp\surefire18354808264982061754\surefirebooter-20250519165417517_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.8+7"/>
+    <property name="user.name" value="Rodrigo Edgar Tarifa"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.8+7"/>
+    <property name="localRepository" value="C:\Users\Rodrigo Edgar Tarifa\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\RODRIG~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.8"/>
+    <property name="user.dir" value="C:\Users\Rodrigo Edgar Tarifa\OneDrive\Escritorio\tres-en-raya-tdd"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.8.7-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\WindowsApps\Microsoft.PowerShell_7.5.1.0_x64__8wekyb3d8bbwe;C:\Program Files\Eclipse Adoptium\jdk-17.0.8.7-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-21.0.5.11-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\CMake\bin;C:\Android\sdk\cmdline-tools\latest\bin;C:\Android\sdk\platform-tools;C:\Android\sdk\tools;C:\Program Files\nodejs\;C:\Users\Rodrigo Edgar Tarifa\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\Rodrigo Edgar Tarifa\AppData\Local\Programs\Python\Python313\;C:\Users\Rodrigo Edgar Tarifa\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Rodrigo Edgar Tarifa\AppData\Local\Programs\Python\Python310\;C:\Users\Rodrigo Edgar Tarifa\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk-20\bin;C:\Users\Rodrigo Edgar Tarifa\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Rodrigo Edgar Tarifa\AppData\Roaming\Composer\vendor\bin;C:\Program Files\Apache\Maven\apache-maven-3.9.7\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.1.2\bin;;C:\Users\Rodrigo Edgar Tarifa\flutter\bin;C:\Users\Rodrigo Edgar Tarifa\AppData\Local\GitHubDesktop\bin;C:\Windows\apktool;C:\Users\Rodrigo Edgar Tarifa\AppData\Roaming\npm;;c:\Users\Rodrigo Edgar Tarifa\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.8+7"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testEjeYFueraDeRango" classname="com.grupo.TresEnRayaTest" time="0.033"/>
+  <testcase name="testEjeXFueraDeRango" classname="com.grupo.TresEnRayaTest" time="0.003"/>
+  <testcase name="testGanadorFila" classname="com.grupo.TresEnRayaTest" time="0.001"/>
+  <testcase name="testPosicionOcupada" classname="com.grupo.TresEnRayaTest" time="0.002"/>
+  <testcase name="testTurnosAlternos" classname="com.grupo.TresEnRayaTest" time="0.001"/>
+</testsuite>
