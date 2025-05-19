@@ -30,6 +30,8 @@ public class TresEnRaya {
         return turnoActual;
     }
 
+    // Método que revisa si hay un ganador horizontal, vertical o diagonal
+
     public char verificarGanador() {
         // Verificar filas y columnas
         for (int i = 0; i < 3; i++) {
