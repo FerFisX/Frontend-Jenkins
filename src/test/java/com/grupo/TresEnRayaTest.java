@@ -5,6 +5,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class TresEnRayaTest {
 
+    // Prueba para lanzar excepción cuando X está fuera del rango permitido
+
     @Test
     public void testEjeXFueraDeRango() {
         TresEnRaya juego = new TresEnRaya();
