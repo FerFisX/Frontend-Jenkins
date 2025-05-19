@@ -22,6 +22,7 @@ public class TresEnRaya {
         if (tablero[x][y] != ' ') throw new IllegalStateException("Posición ocupada");
 
         tablero[x][y] = turnoActual;
+        // Cambiamos el turno al otro jugador
         turnoActual = (turnoActual == 'X') ? 'O' : 'X';
     }
 
