@@ -18,6 +18,7 @@ public class TresEnRaya {
         if (x < 0 || x >= 3) throw new IllegalArgumentException("Eje X fuera de rango");
         // Validamos que la coordenada Y esté dentro del rango
         if (y < 0 || y >= 3) throw new IllegalArgumentException("Eje Y fuera de rango");
+        // Validamos que la celda no esté ocupada
         if (tablero[x][y] != ' ') throw new IllegalStateException("Posición ocupada");
 
         tablero[x][y] = turnoActual;
