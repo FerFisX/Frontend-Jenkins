@@ -1,6 +1,7 @@
 package com.grupo;
 
 public class TresEnRaya {
+    // Clase principal que contiene la lógica del juego Tres en Raya
     private final char[][] tablero = new char[3][3];
     private char turnoActual = 'X';
 
