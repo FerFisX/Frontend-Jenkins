@@ -8,7 +8,7 @@ public class TresEnRaya {
     // Inicializamos el tablero vacío con espacios
 
     public TresEnRaya() {
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < 2; i++)
             for (int j = 0; j < 3; j++)
                 tablero[i][j] = ' ';
     }
