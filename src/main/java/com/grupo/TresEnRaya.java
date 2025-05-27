@@ -15,7 +15,7 @@ public class TresEnRaya {
 
     public void colocarFicha(int x, int y) {
         // Validamos que la coordenada X esté dentro del rango
-        if (x < 0 || x >= 3) throw new IllegalArgumentException("Eje X fuera de rango");
+        if (x < 0 || x >= 4) throw new IllegalArgumentException("Eje X fuera de rango");
         // Validamos que la coordenada Y esté dentro del rango
         if (y < 0 || y >= 3) throw new IllegalArgumentException("Eje Y fuera de rango");
         // Validamos que la celda no esté ocupada
